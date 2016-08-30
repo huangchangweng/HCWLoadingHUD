@@ -3,7 +3,7 @@ ViewController网络加载遮罩，有加载失败，没有数据等状态。使
 
 ![image](https://github.com/huangchangweng/HCWLoadingHUD/blob/master/HCWLoadingHUD.gif)
 
-使用方法
+使用方法\n
 1.property方式
     self.loadingHUD = [HCWLoadingHUD new];
     self.loadingHUD.delegate = self;
