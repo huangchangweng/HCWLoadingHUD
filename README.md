@@ -4,14 +4,14 @@ ViewController网络加载遮罩，有加载失败，没有数据等状态。使
 ![image](https://github.com/huangchangweng/HCWLoadingHUD/blob/master/HCWLoadingHUD.gif)
 
 ## 使用方法
-1.property方式
+### 1.property方式
     self.loadingHUD = [HCWLoadingHUD new];
     self.loadingHUD.delegate = self;
     [self.loadingHUD setText:@"服务器错误点击屏幕重新加载" forState:HCWLoadingHUDLoadOther];
     [self.loadingHUD setText:@"未知错误点击屏幕返回" forState:HCWLoadingHUDLoadError];
     [self.loadingHUD showInViewController:self];
   
-2.使用静态方法
+### 2.使用静态方法
     HCWLoadingHUD *loadingHUD = [HCWLoadingHUD showInViewController:self tapBlock:^(HCWLoadingHUD *hud, HCWLoadingHUDLoadState state) {
         [HCWLoadingHUD hiddenAllHUD:self];
     }];
